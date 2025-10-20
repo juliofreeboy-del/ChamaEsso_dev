@@ -1,0 +1,171 @@
+
+{% load static %}
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chama Esso Splash Screen</title>
+  <style>
+    :root {
+      --primary-green: #34d399;
+      --secondary-green: #10b981;
+      --tertiary-green: #6ee7b7;
+      --accent-yellow: #fbbf24;
+      --text-light: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--primary-green), var(--secondary-green), var(--tertiary-green));
+      color: var(--text-light);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .logo-placeholder {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1.5rem;
+    }
+
+    .logo-placeholder span {
+      font-size: 1rem;
+      color: var(--text-light);
+      opacity: 0.8;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 300px;
+      margin: 1rem auto 0;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-placeholder">
+    <img src="{% static 'onboarding/images/onlyLogo.jpg' %}" alt="logo Chama Essô"/>
+  </div>
+  <h1>Chama Essô</h1>
+  <p>Loading your collective savings experience...</p>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chama Esso Onboarding</title>
+  <style>
+    :root {
+      --primary-green: #34d399;
+      --secondary-green: #10b981;
+      --tertiary-green: #6ee7b7;
+      --accent-yellow: #fbbf24;
+      --text-light: #ffffff;
+      --btn-green: #059669;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      /*background: linear-gradient(135deg, var(--primary-green), var(--secondary-green), var(--tertiary-green)); */
+      background-color: white;
+      color: var(--text-light);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      
+    }
+
+    .profile-container {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1.5rem;
+    }
+
+    .profile-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 300px;
+      margin: 1rem auto 2rem;
+    }
+
+    .btn-start {
+      background-color: var(--btn-green);
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-start:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+ <div class="profile-container">
+    <img src="{% static 'onboarding/images/onlyLogo.jpg' %}" alt="Profile" />
+  </div>
+  <div>
+    <p style="color:black;">Welcome to</p>
+    <h2 style ="color: var(--btn-green);">Chama</h2>
+    <h2 style = "color: goldenrod;">Essô</h2>
+
+    <p style = "color : rgb(33, 24, 1)">Build Your Collective Savings
+      Achieve Financial Goals</p>
+    <button class="btn-start">Get Started</button>
+  </div>
+
+  
+
+</body>
+</html>
