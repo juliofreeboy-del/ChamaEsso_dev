@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Chama Essô Accounts</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #059669;
+      margin-bottom: 0.8rem;
+    }
+    
+   h2 {
+      margin: 0.3rem 0; /* 🔧 added to reduce spacing between Chama and Essô */
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      background-color: #059669;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {with your 
+      background-color: #047857;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>GET ON BOARD!</h1>
+
+<div class="logo-centered">
+    <img src="{% static 'onboarding/images/onlyLogo.jpg' %}" alt="Chama Essô Logo" />
+  </div>
+
+  <p><strong>DOING IT TOGETHER IS BETTER!</strong></p>
+  <h2>Chama</h2>
+  <h2 style="color:goldenrod;">Essô</h2>
+
+  <p>Manage your savings pods, connect with your community, and achieve your financial goals.</p>
+
+  <a href="{% url 'login' %}" class="btn">Log In</a>
+  <a href="{% url 'signup' %}" class="btn" style="margin-left: 1rem;">Sign Up</a>
+
+</body>
+</html>
