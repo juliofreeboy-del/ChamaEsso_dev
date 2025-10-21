@@ -1,16 +1,41 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
   <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    form {
+      max-width: 300px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+    }
+  </style>
 </head>
 <body>
   <h2>Log In</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
+  <form method="post" action="/login">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
     <button type="submit">Log In</button>
   </form>
-  <p>No account yet? <a href="{% url 'signup' %}">Sign up</a></p>
+  <p>No account yet? <a href="/signup">Sign up</a></p>
 </body>
 </html>
